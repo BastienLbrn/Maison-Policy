@@ -1,0 +1,655 @@
+{
+  "Démolition": [
+    {
+      "labelKey": "priceCatalog.removalAndDisposalOfAll",
+      "unit": "forfait",
+      "price": 500
+    },
+    {
+      "labelKey": "priceCatalog.removalAndDisposalOfA",
+      "unit": "forfait",
+      "price": 500
+    },
+    {
+      "labelKey": "priceCatalog.removalOfExistingCeilingWood",
+      "unit": "squareMeter",
+      "price": 16
+    },
+    {
+      "labelKey": "priceCatalog.removalOfExistingFloatingParquet",
+      "unit": "squareMeter",
+      "price": 15
+    },
+    {
+      "labelKey": "priceCatalog.removalAndDisposalOfAn",
+      "unit": "unit",
+      "price": 120
+    },
+    {
+      "labelKey": "priceCatalog.removalOfExistingTiling",
+      "unit": "squareMeter",
+      "price": 20
+    },
+    {
+      "labelKey": "priceCatalog.completeWallpaperStripping",
+      "unit": "squareMeter",
+      "price": 12
+    },
+    {
+      "labelKey": "priceCatalog.removalOfBoilerAndComplete",
+      "unit": "forfait",
+      "price": 1000
+    }
+  ],
+  "Plomberie": [
+    {
+      "labelKey": "priceCatalog.flatRateTestOfThe",
+      "unit": "forfait",
+      "price": 150
+    },
+    {
+      "labelKey": "priceCatalog.completeRemovalOfExistingWater",
+      "unit": "forfait",
+      "price": 800
+    },
+    {
+      "labelKey": "priceCatalog.completeRemovalOfExistingWater2",
+      "unit": "forfait",
+      "price": 1000
+    },
+    {
+      "labelKey": "priceCatalog.completeRemovalOfExistingWater3",
+      "unit": "forfait",
+      "price": 1300
+    },
+    {
+      "labelKey": "priceCatalog.relocationOfAnExistingWater",
+      "unit": "unit",
+      "price": 350
+    },
+    {
+      "labelKey": "priceCatalog.creationOfACompleteWater",
+      "unit": "unit",
+      "price": 8000
+    },
+    {
+      "labelKey": "priceCatalog.modificationOfWaterSuppliesAnd",
+      "unit": "forfait",
+      "price": 2000
+    },
+    {
+      "labelKey": "priceCatalog.modificationOfWaterSuppliesAnd2",
+      "unit": "forfait",
+      "price": 2000
+    }
+  ],
+  "Électricité": [
+    {
+      "labelKey": "priceCatalog.bringingUpToCodeAfter",
+      "unit": "forfait",
+      "price": 1892
+    },
+    {
+      "labelKey": "priceCatalog.relocationOfTheElectricalPanel",
+      "unit": "forfait",
+      "price": 500
+    },
+    {
+      "labelKey": "priceCatalog.installationOfAPanelCut",
+      "unit": "forfait",
+      "price": 400
+    },
+    {
+      "labelKey": "priceCatalog.installationOrReplacementOfA",
+      "unit": "forfait",
+      "price": 300
+    },
+    {
+      "labelKey": "priceCatalog.completeReplacementOfTheElectrical",
+      "unit": "forfait",
+      "price": 750
+    },
+    {
+      "labelKey": "priceCatalog.completeReplacementOfTheElectrical2",
+      "unit": "forfait",
+      "price": 900
+    },
+    {
+      "labelKey": "priceCatalog.completeReplacementOfTheElectrical3",
+      "unit": "forfait",
+      "price": 1000
+    },
+    {
+      "labelKey": "priceCatalog.completeReplacementOfTheElectrical4",
+      "unit": "forfait",
+      "price": 1200
+    },
+    {
+      "labelKey": "priceCatalog.completeReplacementOfTheElectrical5",
+      "unit": "forfait",
+      "price": 1400
+    },
+    {
+      "labelKey": "priceCatalog.completeReplacementOfTheElectrical6",
+      "unit": "forfait",
+      "price": 2500
+    },
+    {
+      "labelKey": "priceCatalog.installationOfACeilingLight",
+      "unit": "forfait",
+      "price": 400
+    },
+    {
+      "labelKey": "priceCatalog.installationOfANewElectrical",
+      "unit": "forfait",
+      "price": 350
+    },
+    {
+      "labelKey": "priceCatalog.installationOfANewElectrical2",
+      "unit": "forfait",
+      "price": 200
+    },
+    {
+      "labelKey": "priceCatalog.replacementOfAllWiringDevices",
+      "unit": "forfait",
+      "price": 450
+    },
+    {
+      "labelKey": "priceCatalog.replacementOfAllWiringDevices2",
+      "unit": "forfait",
+      "price": 750
+    },
+    {
+      "labelKey": "priceCatalog.replacementOfAllWiringDevices3",
+      "unit": "forfait",
+      "price": 750
+    },
+    {
+      "labelKey": "priceCatalog.replacementOfAllWiringDevices4",
+      "unit": "forfait",
+      "price": 900
+    },
+    {
+      "labelKey": "priceCatalog.replacementOfAllWiringDevices5",
+      "unit": "forfait",
+      "price": 1150
+    },
+    {
+      "labelKey": "priceCatalog.replacementOfAllWiringDevices6",
+      "unit": "forfait",
+      "price": 2000
+    },
+    {
+      "labelKey": "priceCatalog.electricInertiaRadiatorStoneOr",
+      "unit": "unit",
+      "price": 300
+    },
+    {
+      "labelKey": "priceCatalog.electricInertiaRadiatorStoneOr2",
+      "unit": "unit",
+      "price": 450
+    },
+    {
+      "labelKey": "priceCatalog.electricInertiaRadiatorStoneOr3",
+      "unit": "unit",
+      "price": 600
+    },
+    {
+      "labelKey": "priceCatalog.ledSpotlightOrLightFixture",
+      "unit": "unit",
+      "price": 70
+    },
+    {
+      "labelKey": "priceCatalog.installationOfAWoodStove",
+      "unit": "unit",
+      "price": 5000
+    },
+    {
+      "labelKey": "priceCatalog.electricalComplianceCertificateConsuel",
+      "unit": "forfait",
+      "price": 250
+    }
+  ],
+  "Chauffage": [
+    {
+      "labelKey": "priceCatalog.flatRateInspectionOfExisting",
+      "unit": "forfait",
+      "price": 150
+    },
+    {
+      "labelKey": "priceCatalog.hotWaterTank100L",
+      "unit": "unit",
+      "price": 700
+    },
+    {
+      "labelKey": "priceCatalog.thermodynamicHotWaterTank150",
+      "unit": "unit",
+      "price": 2500
+    },
+    {
+      "labelKey": "priceCatalog.hotWaterTank200L",
+      "unit": "unit",
+      "price": 1000
+    },
+    {
+      "labelKey": "priceCatalog.hotWaterTank250L",
+      "unit": "unit",
+      "price": 1200
+    },
+    {
+      "labelKey": "priceCatalog.condensingBoilerWithHotWater",
+      "unit": "unit",
+      "price": 3000
+    },
+    {
+      "labelKey": "priceCatalog.condensingBoilerWithHotWater2",
+      "unit": "unit",
+      "price": 3500
+    },
+    {
+      "labelKey": "priceCatalog.condensingBoilerWithHotWater3",
+      "unit": "unit",
+      "price": 4000
+    },
+    {
+      "labelKey": "priceCatalog.condensingBoilerWithoutHotWater",
+      "unit": "unit",
+      "price": 2500
+    },
+    {
+      "labelKey": "priceCatalog.condensingBoilerWithoutHotWater2",
+      "unit": "unit",
+      "price": 3000
+    },
+    {
+      "labelKey": "priceCatalog.condensingBoilerWithoutHotWater3",
+      "unit": "unit",
+      "price": 3500
+    },
+    {
+      "labelKey": "priceCatalog.annualGasBoilerMaintenanceContract",
+      "unit": "forfait",
+      "price": 150
+    },
+    {
+      "labelKey": "priceCatalog.bleedingAndRefillingOfAll",
+      "unit": "forfait",
+      "price": 300
+    },
+    {
+      "labelKey": "priceCatalog.replacementOfTheVentilationUnit",
+      "unit": "unit",
+      "price": 850
+    }
+  ],
+  "Salle de bain": [
+    {
+      "labelKey": "priceCatalog.wallTilingJoints25",
+      "unit": "squareMeter",
+      "price": 40
+    },
+    {
+      "labelKey": "priceCatalog.extraFlatShowerTray80",
+      "unit": "unit",
+      "price": 550
+    },
+    {
+      "labelKey": "priceCatalog.extraFlatShowerTray90",
+      "unit": "unit",
+      "price": 600
+    },
+    {
+      "labelKey": "priceCatalog.extraFlatShowerTray902",
+      "unit": "unit",
+      "price": 680
+    },
+    {
+      "labelKey": "priceCatalog.showerScreen80Cm",
+      "unit": "unit",
+      "price": 450
+    },
+    {
+      "labelKey": "priceCatalog.showerScreen90Cm",
+      "unit": "unit",
+      "price": 500
+    },
+    {
+      "labelKey": "priceCatalog.showerScreen100Cm",
+      "unit": "unit",
+      "price": 550
+    },
+    {
+      "labelKey": "priceCatalog.showerScreen120Cm",
+      "unit": "unit",
+      "price": 600
+    },
+    {
+      "labelKey": "priceCatalog.thermostaticShowerColumn40Safety",
+      "unit": "unit",
+      "price": 450
+    },
+    {
+      "labelKey": "priceCatalog.bathtubWithTaps",
+      "unit": "unit",
+      "price": 900
+    },
+    {
+      "labelKey": "priceCatalog.singleBasinVanityUnitWith",
+      "unit": "unit",
+      "price": 850
+    },
+    {
+      "labelKey": "priceCatalog.doubleBasinVanityUnitWith",
+      "unit": "unit",
+      "price": 1200
+    },
+    {
+      "labelKey": "priceCatalog.electricTowelRail",
+      "unit": "unit",
+      "price": 250
+    },
+    {
+      "labelKey": "priceCatalog.floorStandingToiletWithDual",
+      "unit": "unit",
+      "price": 450
+    },
+    {
+      "labelKey": "priceCatalog.5MmAntiLimescaleGlass",
+      "unit": "unit",
+      "price": 320
+    },
+    {
+      "labelKey": "priceCatalog.completeBathroomPackage",
+      "unit": "forfait",
+      "price": 4000
+    }
+  ],
+  "Cuisine": [
+    {
+      "labelKey": "priceCatalog.completeFittedKitchenStudio",
+      "unit": "forfait",
+      "price": 3200
+    },
+    {
+      "labelKey": "priceCatalog.completeFittedKitchenT2",
+      "unit": "forfait",
+      "price": 3000
+    },
+    {
+      "labelKey": "priceCatalog.completeFittedKitchenT3",
+      "unit": "forfait",
+      "price": 4200
+    },
+    {
+      "labelKey": "priceCatalog.completeFittedKitchenT4",
+      "unit": "forfait",
+      "price": 4800
+    },
+    {
+      "labelKey": "priceCatalog.completeFittedKitchenT5",
+      "unit": "forfait",
+      "price": 5200
+    },
+    {
+      "labelKey": "priceCatalog.completeFittedKitchenT6",
+      "unit": "forfait",
+      "price": 6500
+    },
+    {
+      "labelKey": "priceCatalog.repaintingOfExistingWoodenCabinet",
+      "unit": "unit",
+      "price": 30
+    },
+    {
+      "labelKey": "priceCatalog.replacementOfExistingKitchenCabinet",
+      "unit": "forfait",
+      "price": 600
+    },
+    {
+      "labelKey": "priceCatalog.replacementOfCabinetHandles",
+      "unit": "forfait",
+      "price": 150
+    },
+    {
+      "labelKey": "priceCatalog.tiledBacksplash",
+      "unit": "forfait",
+      "price": 400
+    },
+    {
+      "labelKey": "priceCatalog.rangeHoodSplashback",
+      "unit": "unit",
+      "price": 120
+    },
+    {
+      "labelKey": "priceCatalog.pyrolyticOven",
+      "unit": "unit",
+      "price": 550
+    },
+    {
+      "labelKey": "priceCatalog.fridgeFreezer",
+      "unit": "unit",
+      "price": 350
+    },
+    {
+      "labelKey": "priceCatalog.charcoalFilterRangeHood",
+      "unit": "unit",
+      "price": 180
+    },
+    {
+      "labelKey": "priceCatalog.dishwasher",
+      "unit": "unit",
+      "price": 550
+    },
+    {
+      "labelKey": "priceCatalog.inductionHob",
+      "unit": "unit",
+      "price": 450
+    }
+  ],
+  "Menuiseries": [
+    {
+      "labelKey": "priceCatalog.replacementOfExistingWoodenShutters",
+      "unit": "unit",
+      "price": 400
+    },
+    {
+      "labelKey": "priceCatalog.sandingAndPaintingOfExisting",
+      "unit": "unit",
+      "price": 300
+    },
+    {
+      "labelKey": "priceCatalog.aluminiumPictureWindowDoubleGlazing",
+      "unit": "unit",
+      "price": 1400
+    },
+    {
+      "labelKey": "priceCatalog.sandingAndPaintingOfExterior",
+      "unit": "linearMeter",
+      "price": 15
+    },
+    {
+      "labelKey": "priceCatalog.woodenEntranceDoor3Point",
+      "unit": "unit",
+      "price": 2500
+    },
+    {
+      "labelKey": "priceCatalog.solidCoreWoodenDoorUnit",
+      "unit": "unit",
+      "price": 250
+    },
+    {
+      "labelKey": "priceCatalog.solidCoreWoodenDoorUnit2",
+      "unit": "unit",
+      "price": 280
+    },
+    {
+      "labelKey": "priceCatalog.solidCoreWoodenDoorUnit3",
+      "unit": "unit",
+      "price": 300
+    },
+    {
+      "labelKey": "priceCatalog.slidingDoorWithTrackSystem",
+      "unit": "unit",
+      "price": 350
+    },
+    {
+      "labelKey": "priceCatalog.slidingDoorWithTrackSystem2",
+      "unit": "unit",
+      "price": 400
+    },
+    {
+      "labelKey": "priceCatalog.slidingDoorWithTrackSystem3",
+      "unit": "unit",
+      "price": 450
+    },
+    {
+      "labelKey": "priceCatalog.slidingClosetDoorWidth130",
+      "unit": "unit",
+      "price": 300
+    },
+    {
+      "labelKey": "priceCatalog.slidingClosetDoorWidth150",
+      "unit": "unit",
+      "price": 350
+    },
+    {
+      "labelKey": "priceCatalog.replacementOfTheEntranceDoor",
+      "unit": "unit",
+      "price": 200
+    },
+    {
+      "labelKey": "priceCatalog.fullHeightGlassPartition3",
+      "unit": "unit",
+      "price": 750
+    },
+    {
+      "labelKey": "priceCatalog.fullHeightGlassPartition4",
+      "unit": "unit",
+      "price": 850
+    },
+    {
+      "labelKey": "priceCatalog.fullHeightGlassPartition5",
+      "unit": "unit",
+      "price": 950
+    }
+  ],
+  "Divers": [
+    {
+      "labelKey": "priceCatalog.contingencyBudget",
+      "unit": "forfait",
+      "price": 10000
+    },
+    {
+      "labelKey": "priceCatalog.sewerageDrainage",
+      "unit": "forfait",
+      "price": 12000
+    },
+    {
+      "labelKey": "priceCatalog.completeEndOfWorksCleaning",
+      "unit": "forfait",
+      "price": 150
+    },
+    {
+      "labelKey": "priceCatalog.completeEndOfWorksCleaning2",
+      "unit": "forfait",
+      "price": 400
+    },
+    {
+      "labelKey": "priceCatalog.completeEndOfWorksCleaning3",
+      "unit": "forfait",
+      "price": 500
+    }
+  ],
+  "Home staging": [
+    {
+      "labelKey": "priceCatalog.furnitureSupplyStudio",
+      "unit": "unit",
+      "price": 3950
+    },
+    {
+      "labelKey": "priceCatalog.furnitureAssemblyStudio",
+      "unit": "unit",
+      "price": 400
+    },
+    {
+      "labelKey": "priceCatalog.furnitureSupplyT1",
+      "unit": "unit",
+      "price": 3950
+    },
+    {
+      "labelKey": "priceCatalog.furnitureAssemblyT1",
+      "unit": "unit",
+      "price": 400
+    },
+    {
+      "labelKey": "priceCatalog.furnitureSupplyT2",
+      "unit": "unit",
+      "price": 4630
+    },
+    {
+      "labelKey": "priceCatalog.furnitureAssemblyT2",
+      "unit": "unit",
+      "price": 475
+    },
+    {
+      "labelKey": "priceCatalog.furnitureSupplyT3",
+      "unit": "unit",
+      "price": 6300
+    },
+    {
+      "labelKey": "priceCatalog.furnitureAssemblyT3",
+      "unit": "unit",
+      "price": 650
+    },
+    {
+      "labelKey": "priceCatalog.furnitureSupplyT4",
+      "unit": "unit",
+      "price": 7600
+    },
+    {
+      "labelKey": "priceCatalog.furnitureAssemblyT4",
+      "unit": "unit",
+      "price": 750
+    },
+    {
+      "labelKey": "priceCatalog.furnitureSupplyT5",
+      "unit": "unit",
+      "price": 9000
+    },
+    {
+      "labelKey": "priceCatalog.furnitureAssemblyT5",
+      "unit": "unit",
+      "price": 900
+    },
+    {
+      "labelKey": "priceCatalog.furnitureSupplyT6",
+      "unit": "unit",
+      "price": 10150
+    },
+    {
+      "labelKey": "priceCatalog.furnitureAssemblyT6",
+      "unit": "unit",
+      "price": 1500
+    },
+    {
+      "labelKey": "priceCatalog.balconyFitOut",
+      "unit": "unit",
+      "price": 150
+    },
+    {
+      "labelKey": "priceCatalog.terraceFitOut",
+      "unit": "unit",
+      "price": 300
+    },
+    {
+      "labelKey": "priceCatalog.gardenLandscaping",
+      "unit": "unit",
+      "price": 350
+    },
+    {
+      "labelKey": "priceCatalog.barFitOut",
+      "unit": "unit",
+      "price": 80
+    }
+  ]
+}
