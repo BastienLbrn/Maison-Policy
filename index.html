@@ -18,6 +18,10 @@
     --text-primary: #1A252F;
     --text-secondary: #7F8C8D;
     --divider: #D5C9BC;
+    /* Dégradé identique à appScreenBackground() dans l'app */
+    --bg-grad-start: #DDD3C6;
+    --bg-grad-mid: #EAE2D8;
+    --bg-grad-end: #F5F0EB;
   }
   /* Thème sombre : suit le système, sauf si ?theme=light est passé */
   @media (prefers-color-scheme: dark) {
@@ -31,6 +35,9 @@
       --text-primary: #F2ECE3;
       --text-secondary: #9C948A;
       --divider: #38322B;
+      --bg-grad-start: #13100D;
+      --bg-grad-mid: #1A1611;
+      --bg-grad-end: #221E19;
     }
   }
   /* Thème sombre forcé via ?theme=dark */
@@ -44,6 +51,9 @@
     --text-primary: #F2ECE3;
     --text-secondary: #9C948A;
     --divider: #38322B;
+    --bg-grad-start: #13100D;
+    --bg-grad-mid: #1A1611;
+    --bg-grad-end: #221E19;
   }
 
   * { box-sizing: border-box; }
@@ -57,6 +67,21 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     padding-bottom: max(48px, env(safe-area-inset-bottom));
+  }
+
+  /* Dégradé fixe plein écran, identique à appScreenBackground() de l'app.
+     (pseudo-élément fixed : background-attachment: fixed n'est pas fiable sur iOS) */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      to bottom right,
+      var(--bg-grad-start) 0%,
+      var(--bg-grad-mid) 45%,
+      var(--bg-grad-end) 100%
+    );
   }
 
   .container {
