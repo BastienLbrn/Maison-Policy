@@ -2,137 +2,342 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Politique de confidentialité — Maison+</title>
+<meta name="description" content="Politique de confidentialité de l'application Maison+ — Privacy policy of the Maison+ app">
+<meta name="color-scheme" content="light dark">
 <style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem;
-    color: #1c1c1e; background: #ffffff;
+  :root {
+    --bg: #F5F0EB;
+    --surface: #ECE4D9;
+    --primary: #2C3E50;
+    --on-primary: #F5F0EB;
+    --secondary: #E67E22;
+    --accent: #27AE60;
+    --text-primary: #1A252F;
+    --text-secondary: #7F8C8D;
+    --divider: #D5C9BC;
   }
   @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #000000; }
-    a { color: #0a84ff; }
+    :root {
+      --bg: #161310;
+      --surface: #221E19;
+      --primary: #F0903F;
+      --on-primary: #2A1A0B;
+      --secondary: #F0903F;
+      --accent: #2ECC71;
+      --text-primary: #F2ECE3;
+      --text-secondary: #9C948A;
+      --divider: #38322B;
+    }
   }
-  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
-  h2 { font-size: 1.2rem; margin-top: 2.25rem; }
-  h3 { font-size: 1rem; margin-top: 1.5rem; }
-  .updated { color: #8e8e93; font-size: 0.9rem; }
-  .lang-switch { margin: 1.5rem 0; font-size: 0.95rem; }
-  hr { border: none; border-top: 1px solid #d1d1d6; margin: 3rem 0; }
-  a { color: #007aff; }
-  section { scroll-margin-top: 1rem; }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: max(48px, env(safe-area-inset-bottom));
+  }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 18px;
+  }
+
+  /* ---- Header ---- */
+  header {
+    padding: 36px 0 12px;
+    text-align: center;
+  }
+  .app-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: var(--primary);
+    color: var(--on-primary);
+    margin-bottom: 12px;
+  }
+  .app-badge svg { width: 34px; height: 34px; }
+  h1 {
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 4px;
+  }
+  .subtitle {
+    color: var(--text-secondary);
+    font-size: 0.95em;
+    margin: 0 0 20px;
+  }
+  .updated {
+    display: inline-block;
+    background: var(--surface);
+    color: var(--text-secondary);
+    border-radius: 999px;
+    padding: 4px 14px;
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  /* ---- Language switch (style segmented control) ---- */
+  .lang-switch {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    background: var(--surface);
+    border-radius: 999px;
+    padding: 4px;
+    width: fit-content;
+    margin: 20px auto 0;
+  }
+  .lang-switch button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--text-secondary);
+    font: inherit;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 6px 22px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .lang-switch button.active {
+    background: var(--primary);
+    color: var(--on-primary);
+  }
+
+  /* ---- Sections en cards ---- */
+  main { padding-top: 24px; }
+  .intro {
+    color: var(--text-secondary);
+    font-size: 0.95em;
+    text-align: center;
+    margin: 0 auto 28px;
+    max-width: 560px;
+  }
+  section.card {
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 15px;
+  }
+  section.card h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+  .num {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 9px;
+    font-size: 0.8em;
+    font-weight: 700;
+    background: color-mix(in srgb, var(--secondary) 15%, transparent);
+    color: var(--secondary);
+  }
+  section.card p {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 0.95em;
+  }
+  section.card p + p { margin-top: 8px; }
+  strong { font-weight: 650; }
+  a { color: var(--secondary); text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.8em;
+    padding-top: 24px;
+  }
+
+  [hidden] { display: none !important; }
 </style>
 </head>
 <body>
 
-<!-- ====================== FRANÇAIS ====================== -->
-<section id="fr" lang="fr">
-  <h1>Politique de confidentialité</h1>
-  <p class="updated">Application Maison+ — Dernière mise à jour : 12 juin 2026</p>
-  <p class="lang-switch"><a href="#en">Read this page in English ↓</a></p>
+<div class="container">
+  <header>
+    <div class="app-badge" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 10.5 12 3l9 7.5"/>
+        <path d="M5 9.5V21h14V9.5"/>
+        <path d="M10 21v-6h4v6"/>
+      </svg>
+    </div>
+    <h1 id="page-title">Politique de confidentialité</h1>
+    <p class="subtitle">Maison+</p>
+    <span class="updated" id="updated-fr">Dernière mise à jour : 12 juin 2026</span>
+    <span class="updated" id="updated-en" hidden>Last updated: June 12, 2026</span>
 
-  <p>La présente politique décrit la manière dont l'application <strong>Maison+</strong> (« l'application »)
-  traite vos données. Le responsable du traitement est <strong>Bastien Lebrun</strong>, éditeur de l'application.</p>
+    <div class="lang-switch" role="tablist" aria-label="Language">
+      <button type="button" id="btn-fr" class="active" onclick="setLang('fr')">Français</button>
+      <button type="button" id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </header>
 
-  <h2>1. Données traitées</h2>
-  <p>L'application vous permet de gérer vos projets de rénovation : projets, intervenants, documents
-  (devis, factures), tâches et estimations. Ces informations sont saisies par vous et incluent les
-  documents que vous scannez ou importez. Aucune autre donnée n'est collectée.</p>
+  <main>
+    <!-- ==================== FRANÇAIS ==================== -->
+    <div id="lang-fr">
+      <p class="intro">La présente politique décrit la manière dont l'application <strong>Maison+</strong> (« l'application ») traite vos données. Le responsable du traitement est <strong>Bastien Lebrun</strong>, éditeur de l'application.</p>
 
-  <h2>2. Où sont stockées vos données</h2>
-  <p>Vos données sont stockées <strong>localement sur votre appareil</strong> et synchronisées, le cas
-  échéant, via la <strong>base de données CloudKit privée de votre compte iCloud</strong>. Cette base
-  est gérée par Apple et n'est accessible qu'avec votre identifiant Apple. <strong>L'éditeur n'a pas
-  accès à ces données</strong> et ne les stocke sur aucun serveur lui appartenant.</p>
+      <section class="card">
+        <h2><span class="num">1</span>Données traitées</h2>
+        <p>L'application vous permet de gérer vos projets de rénovation : projets, intervenants, documents (devis, factures), tâches et estimations. Ces informations sont saisies par vous et incluent les documents que vous scannez ou importez. Aucune autre donnée n'est collectée.</p>
+      </section>
 
-  <h2>3. Ce que nous ne faisons pas</h2>
-  <p>L'application ne collecte aucune donnée à des fins commerciales, n'effectue aucun suivi
-  publicitaire (pas d'App Tracking Transparency), n'affiche pas de publicité, n'utilise pas d'outils
-  d'analyse tiers et ne partage vos données avec aucun tiers.</p>
+      <section class="card">
+        <h2><span class="num">2</span>Où sont stockées vos données</h2>
+        <p>Vos données sont stockées <strong>localement sur votre appareil</strong> et synchronisées, le cas échéant, via la <strong>base de données CloudKit privée de votre compte iCloud</strong>. Cette base est gérée par Apple et n'est accessible qu'avec votre identifiant Apple. <strong>L'éditeur n'a pas accès à ces données</strong> et ne les stocke sur aucun serveur lui appartenant.</p>
+      </section>
 
-  <h2>4. Caméra</h2>
-  <p>L'application demande l'accès à la caméra uniquement lorsque vous choisissez de scanner un
-  document. Les documents scannés sont enregistrés comme décrit ci-dessus (appareil + iCloud privé).
-  Aucune image n'est transmise à l'éditeur.</p>
+      <section class="card">
+        <h2><span class="num">3</span>Ce que nous ne faisons pas</h2>
+        <p>L'application ne collecte aucune donnée à des fins commerciales, n'effectue aucun suivi publicitaire (pas d'App Tracking Transparency), n'affiche pas de publicité, n'utilise pas d'outils d'analyse tiers et ne partage vos données avec aucun tiers.</p>
+      </section>
 
-  <h2>5. Réglages internes</h2>
-  <p>L'application stocke quelques préférences techniques sur l'appareil (par exemple le fait que
-  l'écran d'accueil a déjà été vu). Ces informations ne permettent pas de vous identifier.</p>
+      <section class="card">
+        <h2><span class="num">4</span>Caméra</h2>
+        <p>L'application demande l'accès à la caméra uniquement lorsque vous choisissez de scanner un document. Les documents scannés sont enregistrés comme décrit ci-dessus (appareil + iCloud privé). Aucune image n'est transmise à l'éditeur.</p>
+      </section>
 
-  <h2>6. Conservation et suppression</h2>
-  <p>Vos données sont conservées tant que vous utilisez l'application. Vous pouvez les supprimer à tout
-  moment : en effaçant les éléments concernés dans l'application, en désinstallant l'application, ou en
-  gérant les données iCloud de Maison+ depuis les Réglages iOS (iCloud).</p>
+      <section class="card">
+        <h2><span class="num">5</span>Réglages internes</h2>
+        <p>L'application stocke quelques préférences techniques sur l'appareil (par exemple le fait que l'écran d'accueil a déjà été vu). Ces informations ne permettent pas de vous identifier.</p>
+      </section>
 
-  <h2>7. Vos droits</h2>
-  <p>Conformément au RGPD, vous disposez de droits d'accès, de rectification et de suppression de vos
-  données. Comme l'éditeur n'a aucun accès à vos données, vous exercez ces droits directement depuis
-  l'application et votre compte iCloud. Pour toute question, contactez-nous à l'adresse ci-dessous.</p>
+      <section class="card">
+        <h2><span class="num">6</span>Conservation et suppression</h2>
+        <p>Vos données sont conservées tant que vous utilisez l'application. Vous pouvez les supprimer à tout moment : en effaçant les éléments concernés dans l'application, en désinstallant l'application, ou en gérant les données iCloud de Maison+ depuis les Réglages iOS (iCloud).</p>
+      </section>
 
-  <h2>8. Enfants</h2>
-  <p>L'application n'est pas destinée aux enfants et ne collecte pas sciemment de données les concernant.</p>
+      <section class="card">
+        <h2><span class="num">7</span>Vos droits</h2>
+        <p>Conformément au RGPD, vous disposez de droits d'accès, de rectification et de suppression de vos données. Comme l'éditeur n'a aucun accès à vos données, vous exercez ces droits directement depuis l'application et votre compte iCloud. Pour toute question, contactez-nous à l'adresse ci-dessous.</p>
+      </section>
 
-  <h2>9. Modifications</h2>
-  <p>Cette politique peut être mise à jour. La date de dernière mise à jour figure en haut de page.</p>
+      <section class="card">
+        <h2><span class="num">8</span>Enfants</h2>
+        <p>L'application n'est pas destinée aux enfants et ne collecte pas sciemment de données les concernant.</p>
+      </section>
 
-  <h2>10. Contact</h2>
-  <p>Pour toute question relative à cette politique : <a href="mailto:bastienlebrun@icloud.com">bastienlebrun@icloud.com</a></p>
-</section>
+      <section class="card">
+        <h2><span class="num">9</span>Modifications</h2>
+        <p>Cette politique peut être mise à jour. La date de dernière mise à jour figure en haut de page.</p>
+      </section>
 
-<hr>
+      <section class="card">
+        <h2><span class="num">10</span>Contact</h2>
+        <p>Pour toute question relative à cette politique : <a href="mailto:bastienlebrun@icloud.com">bastienlebrun@icloud.com</a></p>
+      </section>
+    </div>
 
-<!-- ====================== ENGLISH ====================== -->
-<section id="en" lang="en">
-  <h1>Privacy Policy</h1>
-  <p class="updated">Maison+ app — Last updated: June 12, 2026</p>
-  <p class="lang-switch"><a href="#fr">Lire cette page en français ↑</a></p>
+    <!-- ==================== ENGLISH ==================== -->
+    <div id="lang-en" hidden>
+      <p class="intro">This policy describes how the <strong>Maison+</strong> application ("the app") handles your data. The data controller is <strong>Bastien Lebrun</strong>, the app's publisher.</p>
 
-  <p>This policy describes how the <strong>Maison+</strong> application ("the app") handles your data.
-  The data controller is <strong>Bastien Lebrun</strong>, the app's publisher.</p>
+      <section class="card">
+        <h2><span class="num">1</span>Data processed</h2>
+        <p>The app lets you manage your renovation projects: projects, stakeholders, documents (quotes, invoices), tasks and estimates. This information is entered by you and includes the documents you scan or import. No other data is collected.</p>
+      </section>
 
-  <h2>1. Data processed</h2>
-  <p>The app lets you manage your renovation projects: projects, stakeholders, documents (quotes,
-  invoices), tasks and estimates. This information is entered by you and includes the documents you scan
-  or import. No other data is collected.</p>
+      <section class="card">
+        <h2><span class="num">2</span>Where your data is stored</h2>
+        <p>Your data is stored <strong>locally on your device</strong> and, where applicable, synced through the <strong>private CloudKit database of your iCloud account</strong>. This database is managed by Apple and accessible only with your Apple ID. <strong>The publisher has no access to this data</strong> and stores it on no server of its own.</p>
+      </section>
 
-  <h2>2. Where your data is stored</h2>
-  <p>Your data is stored <strong>locally on your device</strong> and, where applicable, synced through
-  the <strong>private CloudKit database of your iCloud account</strong>. This database is managed by
-  Apple and accessible only with your Apple ID. <strong>The publisher has no access to this data</strong>
-  and stores it on no server of its own.</p>
+      <section class="card">
+        <h2><span class="num">3</span>What we do not do</h2>
+        <p>The app collects no data for commercial purposes, performs no advertising tracking (no App Tracking Transparency), shows no ads, uses no third-party analytics, and shares your data with no third party.</p>
+      </section>
 
-  <h2>3. What we do not do</h2>
-  <p>The app collects no data for commercial purposes, performs no advertising tracking (no App Tracking
-  Transparency), shows no ads, uses no third-party analytics, and shares your data with no third party.</p>
+      <section class="card">
+        <h2><span class="num">4</span>Camera</h2>
+        <p>The app requests camera access only when you choose to scan a document. Scanned documents are stored as described above (device + private iCloud). No image is transmitted to the publisher.</p>
+      </section>
 
-  <h2>4. Camera</h2>
-  <p>The app requests camera access only when you choose to scan a document. Scanned documents are stored
-  as described above (device + private iCloud). No image is transmitted to the publisher.</p>
+      <section class="card">
+        <h2><span class="num">5</span>Internal settings</h2>
+        <p>The app stores a few technical preferences on the device (for example whether the onboarding screen has already been seen). This information cannot identify you.</p>
+      </section>
 
-  <h2>5. Internal settings</h2>
-  <p>The app stores a few technical preferences on the device (for example whether the onboarding screen
-  has already been seen). This information cannot identify you.</p>
+      <section class="card">
+        <h2><span class="num">6</span>Retention and deletion</h2>
+        <p>Your data is kept as long as you use the app. You can delete it at any time: by removing the relevant items in the app, by uninstalling the app, or by managing Maison+'s iCloud data from iOS Settings (iCloud).</p>
+      </section>
 
-  <h2>6. Retention and deletion</h2>
-  <p>Your data is kept as long as you use the app. You can delete it at any time: by removing the relevant
-  items in the app, by uninstalling the app, or by managing Maison+'s iCloud data from iOS Settings (iCloud).</p>
+      <section class="card">
+        <h2><span class="num">7</span>Your rights</h2>
+        <p>Under the GDPR, you have the rights to access, rectify and erase your data. Since the publisher has no access to your data, you exercise these rights directly from the app and your iCloud account. For any question, contact us at the address below.</p>
+      </section>
 
-  <h2>7. Your rights</h2>
-  <p>Under the GDPR, you have the rights to access, rectify and erase your data. Since the publisher has
-  no access to your data, you exercise these rights directly from the app and your iCloud account. For any
-  question, contact us at the address below.</p>
+      <section class="card">
+        <h2><span class="num">8</span>Children</h2>
+        <p>The app is not intended for children and does not knowingly collect data about them.</p>
+      </section>
 
-  <h2>8. Children</h2>
-  <p>The app is not intended for children and does not knowingly collect data about them.</p>
+      <section class="card">
+        <h2><span class="num">9</span>Changes</h2>
+        <p>This policy may be updated. The last-updated date appears at the top of the page.</p>
+      </section>
 
-  <h2>9. Changes</h2>
-  <p>This policy may be updated. The last-updated date appears at the top of the page.</p>
+      <section class="card">
+        <h2><span class="num">10</span>Contact</h2>
+        <p>For any question about this policy: <a href="mailto:bastienlebrun@icloud.com">bastienlebrun@icloud.com</a></p>
+      </section>
+    </div>
+  </main>
 
-  <h2>10. Contact</h2>
-  <p>For any question about this policy: <a href="mailto:bastienlebrun@icloud.com">bastienlebrun@icloud.com</a></p>
-</section>
+  <footer>Maison+ — Bastien Lebrun</footer>
+</div>
+
+<script>
+  function setLang(lang) {
+    var isFR = lang === 'fr';
+    document.getElementById('lang-fr').hidden = !isFR;
+    document.getElementById('lang-en').hidden = isFR;
+    document.getElementById('updated-fr').hidden = !isFR;
+    document.getElementById('updated-en').hidden = isFR;
+    document.getElementById('btn-fr').classList.toggle('active', isFR);
+    document.getElementById('btn-en').classList.toggle('active', !isFR);
+    document.documentElement.lang = lang;
+    document.getElementById('page-title').textContent =
+      isFR ? 'Politique de confidentialité' : 'Privacy Policy';
+    document.title = isFR
+      ? 'Politique de confidentialité — Maison+'
+      : 'Privacy Policy — Maison+';
+    try { localStorage.setItem('maison-lang', lang); } catch (e) {}
+  }
+
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('maison-lang'); } catch (e) {}
+    var param = new URLSearchParams(location.search).get('lang');
+    var lang = param || saved
+      || ((navigator.language || 'fr').toLowerCase().startsWith('fr') ? 'fr' : 'en');
+    if (lang !== 'fr') { setLang('en'); }
+  })();
+</script>
 
 </body>
 </html>
