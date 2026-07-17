@@ -7,7 +7,8 @@
 <meta name="description" content="Politique de confidentialité de l'application Maison+ — Privacy policy of the Maison+ app">
 <meta name="color-scheme" content="light dark">
 <style>
-  :root {
+  /* Thème clair (défaut). Forçable via ?theme=light */
+  :root, :root[data-theme="light"] {
     --bg: #F5F0EB;
     --surface: #ECE4D9;
     --primary: #2C3E50;
@@ -18,8 +19,9 @@
     --text-secondary: #7F8C8D;
     --divider: #D5C9BC;
   }
+  /* Thème sombre : suit le système, sauf si ?theme=light est passé */
   @media (prefers-color-scheme: dark) {
-    :root {
+    :root:not([data-theme="light"]) {
       --bg: #161310;
       --surface: #221E19;
       --primary: #F0903F;
@@ -30,6 +32,18 @@
       --text-secondary: #9C948A;
       --divider: #38322B;
     }
+  }
+  /* Thème sombre forcé via ?theme=dark */
+  :root[data-theme="dark"] {
+    --bg: #161310;
+    --surface: #221E19;
+    --primary: #F0903F;
+    --on-primary: #2A1A0B;
+    --secondary: #F0903F;
+    --accent: #2ECC71;
+    --text-primary: #F2ECE3;
+    --text-secondary: #9C948A;
+    --divider: #38322B;
   }
 
   * { box-sizing: border-box; }
@@ -330,10 +344,19 @@
   }
 
   (function () {
+    var params = new URLSearchParams(location.search);
+
+    // Thème forcé via ?theme=dark|light (ex. par la WebView de l'app),
+    // sinon suit le réglage système (prefers-color-scheme).
+    var theme = params.get('theme');
+    if (theme === 'dark' || theme === 'light') {
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    }
+
     var saved = null;
     try { saved = localStorage.getItem('maison-lang'); } catch (e) {}
-    var param = new URLSearchParams(location.search).get('lang');
-    var lang = param || saved
+    var lang = params.get('lang') || saved
       || ((navigator.language || 'fr').toLowerCase().startsWith('fr') ? 'fr' : 'en');
     if (lang !== 'fr') { setLang('en'); }
   })();
